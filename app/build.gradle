@@ -5,7 +5,7 @@ android {
     buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId "com.company.birthdayprob"
+        applicationId "com.company.gate_a"
         minSdkVersion 21
         targetSdkVersion 32
         versionCode 1
