@@ -53,4 +53,3 @@ task _projectZip(type:Zip) {
 
     destinationDir file('zip')
 }
-

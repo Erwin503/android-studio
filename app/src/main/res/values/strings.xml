@@ -1,10 +1,14 @@
 <resources>
-    <string name="app_name">AccountApp</string>
-    <string-array name="shapes">
-        <item>Rectangle</item>
-        <item>Box</item>
-        <item>Circle</item>
-        <item>Sphere</item>
-        <item>Triangle</item>
+    <string name="app_name">Diamond App</string>
+
+    <string-array name="diamondSizes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
     </string-array>
 </resources>

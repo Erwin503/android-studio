@@ -7,147 +7,54 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.company.shapes.ui.MainActivity">
+    tools:context=".ui.MainActivity">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout1">
+        android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Enter Length:"
-            android:id="@+id/labelTextView1"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal|numberSigned"
-            android:ems="10"
-            android:id="@+id/lengthET"
-            android:hint="Length..." />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout2"
-        android:layout_below="@id/linearLayout1">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Enter Width:"
-            android:id="@+id/labelTextView2"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal|numberSigned"
-            android:ems="10"
-            android:id="@+id/widthET"
-            android:hint="Width..." />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/linearLayout2"
-        android:id="@+id/linearLayout3">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Enter Height:"
-            android:id="@+id/labelTextView3"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal|numberSigned"
-            android:ems="10"
-            android:id="@+id/heightET"
-            android:nextFocusForward="@+id/radiusET"
-            android:hint="Height..." />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/linearLayout3"
-        android:id="@+id/linearLayout4">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Enter Radius:"
-            android:id="@+id/labelTextView4"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal|numberSigned"
-            android:ems="10"
-            android:id="@+id/radiusET"
-            android:hint="Radius..." />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/linearLayout4"
-        android:id="@+id/linearLayout5">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Process..."
-        android:id="@+id/button"
-        android:onClick="buttonPressed"
-        android:layout_below="@+id/linearLayout4"
-        android:layout_alignParentEnd="true" />
+            android:text="Select Size:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Spinner
+            android:id="@+id/sizeSpinner"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
-    <EditText
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:includeFontPadding="false"
-        android:lineSpacingExtra="1dp"
-        android:lineSpacingMultiplier="1"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout"
+        android:onClick="buttonPressed"
+        android:text="Process..." />
+
+    <EditText
         android:id="@+id/outputET"
-        android:layout_below="@+id/linearLayout5"
-        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:inputType="textMultiLine"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="42dp"
+        android:ems="10"
         android:hint="Output Will Appear Here..."
-        android:typeface="monospace" />
+        android:includeFontPadding="false"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="1dp"
+        android:lineSpacingMultiplier="1"
+        android:typeface="monospace" 
+		android:fontFamily="monospace" />
 
 </RelativeLayout>
