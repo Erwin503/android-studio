@@ -1,4 +1,4 @@
-com.company.diamonds
+com.example.diamonds
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -25,7 +25,6 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
-array diamondSizes
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1024,6 +1023,8 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id disableHome
+id editTextCount
+id editTextGroupSize
 id edit_query
 id end
 id enterAlways
@@ -1035,6 +1036,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id firstRow
 id fixed
 id forever
 id ghost_view
@@ -1053,7 +1055,6 @@ id largeLabel
 id left
 id line1
 id line3
-id linearLayout
 id listMode
 id list_item
 id masked
@@ -1101,13 +1102,13 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id secondRow
 id select_dialog_listview
 id selected
 id shortcut
 id showCustom
 id showHome
 id showTitle
-id sizeSpinner
 id smallLabel
 id snackbar_action
 id snackbar_text
@@ -1132,6 +1133,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView2
+id textView3
 id text_input_password_toggle
 id textinput_counter
 id textinput_error

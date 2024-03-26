@@ -5,7 +5,7 @@ android {
     buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId 'com.company.diamonds'
+        applicationId "com.company.birthdayprob"
         minSdkVersion 21
         targetSdkVersion 32
         versionCode 1
@@ -27,7 +27,7 @@ android {
     }
     testOptions {
         unitTests.returnDefaultValues = true
-        unitTests.all {
+        unitTests.all{
             ignoreFailures = true
             maxHeapSize = "1024m"
         }
@@ -35,8 +35,6 @@ android {
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
-    }
-    productFlavors {
     }
 }
 
